@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    background-color: black;
+    overflow: scroll;
+}
+footer{
+    color: aliceblue;
+    margin-left: 50px;
+    z-index: 99;
+}
+#particles-js{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.container{
+
+    color: aliceblue;
+    
+    z-index: 99;
+    margin: 150px;
+}
+
+.img{
+    width: 120px;
+    display: flex;
+    justify-content: right;
+}
+.carta{
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 100px;
+    box-shadow: 4px 8px 18px #1a4657;
+    padding: 20px;
+    background-color: black;
+}
+
+.card-conocenos{
+    background-color: black;
+    width: 300px;
+    z-index: 99;
+}
+
+.menu{
+    background-color: rgb(41, 94, 138);
+    color: #ffff;
+    height: 70px;
+}
+
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu_links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+}
+
+.menu_item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+.menu_item--active{
+    --transform: rotate(0);
+    --background: rgb(41, 94, 138);
+}
+.menu_item--show{
+    background-color: var(--background);
+}
+.menu_item:hover{
+  --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  --transform: rotate .3s;
+}
+.menu_link{
+    color: #ffff;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.menu_link:hover{
+    background-color: rgb(72, 150, 214);
+}
+.menu_arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+.menu_nesting{
+    clip-path: var(--clip);
+    list-style: none;
+    transition:clip-path .3s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: rgb(41, 94, 138);
+}
+.menu_link--inside{
+    padding: 30px 100px 30px 20px;
+}
+
