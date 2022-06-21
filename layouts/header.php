@@ -28,13 +28,16 @@
                             <li class="menu_inside">
                                 <a href="ver_usuario.php" class="menu_link menu_link--inside">ver usuarios</a>
                             </li>
+                            <li class="menu_inside">
+                                <a href="ver_producto.php" class="menu_link menu_link--inside">ver producto</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="menu_item">
                         <a href="" class="menu_link">Log <img src="assets/icons/arrow.svg" alt="" class="menu_arrow"></a>
                         <ul class="menu_nesting">
                             <li class="menu_inside">
-                                <a href="login.html" class="menu_link menu_link--inside"> Log In</a>
+                                <a href="producto.php" class="menu_link menu_link--inside"> Crear producto</a>
                             </li>
                             <li class="menu_inside">
                                 <a href="reset.php" class="menu_link menu_link--inside"> Crear usuario</a>
@@ -42,7 +45,7 @@
                         </ul>
                     </li>
                     <li class="menu_item">
-                        <a href="actualizar.php" class="menu_link">contact</a>
+                        <a href="conocenos.php" class="menu_link">contacto</a>
                     </li>
                 </ul>
         </nav>
