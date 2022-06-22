@@ -11,7 +11,8 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">nombre</th>
-                <th scope="col">precio</th>
+                <th scope="col">cantidad</th>
+                <th scope="col">categoria</th>
                 <th scope="col">actualizar</th>
                 <th scope="col">borrar</th>
             </tr>
@@ -19,15 +20,16 @@
             <tbody>
                 <?php 
 
-                $query = "SELECT * FROM productos";
-                $result_precio = mysqli_query($connection, $query);
+                $query = "SELECT * FROM mercancia";
+                $result_user = mysqli_query($connection, $query);
 
-                while($row = mysqli_fetch_array($result_precio)){?>
+                while($row = mysqli_fetch_array($result_user)){?>
 
                 <tr>
                     <td><?php echo $row['ID']?></td>
                     <td><?php echo $row['nombre']?></td>
-                    <td><?php echo $row['precio']?></td>
+                    <td><?php echo $row['cantidad']?></td>
+                    <td><?php echo $row['categoria']?></td>
 
                     <td>
                         <a href="acrualizar_p.php?id=<?php echo $row['ID']?>"> 

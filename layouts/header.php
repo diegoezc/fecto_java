@@ -17,10 +17,10 @@
   <div id="particles-js"></div>
     <nav class="menu">
             <div class="menu_container">
-                <h1 class="menu_logo">Pagina Web</h1>
+                <h1 class="menu_logo"><a href="index.php">Pagina Web</a></h1>
                 <ul class="menu_links">
                     <li class="menu_item">
-                        <a href="" class="menu_link">home</a>
+                        <a href="empleado.php" class="menu_link">Empleados</a>
                     </li>
                     <li class="menu_item menu_item--show">
                         <a href="" class="menu_link">usuarios <img src="assets/icons/arrow.svg" alt="" class="menu_arrow"></a>
@@ -45,7 +45,7 @@
                         </ul>
                     </li>
                     <li class="menu_item">
-                        <a href="conocenos.php" class="menu_link">contacto</a>
+                        <a href="mercancia.php" class="menu_link">mercancia</a>
                     </li>
                 </ul>
         </nav>
